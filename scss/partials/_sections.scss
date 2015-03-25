@@ -1,0 +1,25 @@
+section { padding-top: 20px; padding-bottom: 20px;
+  &.full-screen { height:100%; }
+  > .inner { @extend %inner; }
+  > .big-inner { @extend %big-inner; }
+  
+  &.logo { background-color:$black; color:$white;
+    img { width:100%; height: 100%; }
+  }
+  &.description { background-color: rgba($black,0.2); color:$black; }
+  &.how-to-play {  background-color: $blue; color:$black; }
+  &.instructions { background-color:$white; color:$black;}
+}
+
+figure { background-color:$grey; text-align: center; display: block; margin-top: 10px; margin-bottom: 10px;
+  figcaption { @extend %inner; color:$yellow; text-align: left; font-size:1.25em; text-shadow:0 -2px 2px $black; }
+}
+
+@media (min-width:921px) {
+  section { font-size:18px; }
+}
+@media (max-width:$inner) {
+  section { font-size:4vw;
+    > .inner { padding-left: 10px; padding-right: 10px; }
+  }
+}
