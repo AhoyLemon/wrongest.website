@@ -2,7 +2,7 @@ body { font-family: $font; }
 .hidden { display: none; }
 svg * { fill:currentColor; }
 
-h2 { font-size:2em; font-weight: $light; text-transform: capitalize; border-bottom: 2px solid $black; line-height: 90%;  }
+h2 { font-size:2em; font-weight: $light; text-transform: capitalize; color:$red; border-bottom: 2px solid $black; line-height: 90%;  }
 p { padding-bottom: 1em; }
 
 .button-holder { display: block; text-align: center; padding: 0.5em;
@@ -10,8 +10,7 @@ p { padding-bottom: 1em; }
 }
 
 .button { display: inline-block; padding: 0.25em 0.75em; text-decoration:none; font-family:$font; background-color:$blue; color:$white; border:1px solid $black; cursor:pointer;
-  &.big { border-width: 2px; font-size:1.3em; }
-  
-  &:hover { background-color:darken($blue,10%); }
+  &.big { border-width: 2px; font-size:1.3em; }  
+  &:hover { background-color:lighten($blue,10%); transform: scale(1.2); }
   &:active { box-shadow: 2px 2px 0 $black inset; }
 }
