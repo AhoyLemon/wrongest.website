@@ -1,10 +1,10 @@
 section { padding-top: 20px; padding-bottom: 20px;
-  &.full-screen { height:100%; }
+  &.full-screen { height: 100%;  }
   > .inner { @extend %inner; }
   > .big-inner { @extend %big-inner; }
   
-  &.logo { background-color:$black; color:$white;
-    img { width:100%; height: 100%; }
+  &.logo { background-color:$black; color:$white; overflow: hidden;  font-size:18px;
+    img { width:95%; height: 80%; margin-left: auto; margin-right: auto; display: block; }
   }
   &.description { background-color: rgba($black,0.2); color:$black; }
   &.how-to-play {  background-color: $blue; color:$black; }
@@ -12,14 +12,21 @@ section { padding-top: 20px; padding-bottom: 20px;
 }
 
 figure { background-color:$grey; text-align: center; display: block; margin-top: 10px; margin-bottom: 10px;
-  figcaption { @extend %inner; color:$yellow; text-align: left; font-size:1.25em; text-shadow:0 -2px 2px $black; }
+  figcaption { @extend %inner; color:$yellow; text-align: left; font-size:1.35em; text-shadow:0 -2px 2px $black; padding-top: 0.4em; padding-bottom: 0.4em,; }
 }
 
+
 @media (min-width:921px) {
-  section { font-size:18px; }
+  section { font-size:18px;
+    &.logo img { height: 80%; }
+  }
 }
 @media (max-width:$inner) {
   section { font-size:4vw;
     > .inner { padding-left: 10px; padding-right: 10px; }
+    &.logo img { height: 67%; }
+  }
+  figure {
+    figcaption { padding: 0.5em; }
   }
 }
