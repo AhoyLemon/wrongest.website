@@ -15,13 +15,6 @@ figure { background-color:$grey; text-align: center; display: block; margin-top:
   figcaption { @extend %inner; color:$yellow; text-align: left; font-size:1.35em; text-shadow:0 -2px 2px $black; padding-top: 0.4em; padding-bottom: 0.4em,; }
 }
 
-@media (max-width:$phone-max) {
-  section.logo {
-    img { height: 64%; }
-    .inner p { font-size:14px; }
-  }
-}
-
 
 @media (min-width:921px) {
   section { font-size:18px;
@@ -32,7 +25,10 @@ figure { background-color:$grey; text-align: center; display: block; margin-top:
 @media (max-width:$inner) {
   section { font-size:4vw;
     > .inner { padding-left: 10px; padding-right: 10px; }
-    &.logo img { height: 67%; }
+    &.logo {
+      .inner p { font-size: 12px; }
+      img { height: 62%; }
+    }
   }
   figure {
     figcaption { padding: 0.5em; }
