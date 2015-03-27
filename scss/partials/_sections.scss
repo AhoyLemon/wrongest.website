@@ -1,6 +1,6 @@
 section { padding-top: 20px; padding-bottom: 20px;
   &.full-screen { height: 100%;  }
-  > .inner { @extend %inner; }
+  > .inner { @extend %inner; padding-top: 1em; }
   > .big-inner { @extend %big-inner; }
   
   &.logo { background-color:$black; color:$white; overflow: hidden;  font-size:18px;
