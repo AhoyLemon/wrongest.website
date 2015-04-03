@@ -3,7 +3,12 @@ body { font-family: $font; }
 svg * { fill:currentColor; }
 
 h2 { font-size:2em; font-weight: $light; text-transform: capitalize; color:$red; border-bottom: 2px solid $black; line-height: 90%;  }
-p { padding-bottom: 1em; }
+h3 { font-size:1.3em; font-weight: $light; text-transform: capitalize; color:$red; border-bottom: 1px solid $black; line-height: 94%; margin-bottom:0.35em;  }
+p { padding-bottom: 1em;
+  a { color:$blue; text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+}
 
 .button-holder { display: block; text-align: center; padding: 0.5em;
   > span { display: block; font-size:0.8em; padding-top: 1em; }
