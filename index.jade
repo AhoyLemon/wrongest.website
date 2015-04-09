@@ -145,6 +145,13 @@ html(lang="en")
         .button-holder
           a.big.button(href="http://goo.gl/forms/wXHLNXYVRJ") Suggest A Card
           span ...yeah, there it is.
-    section.
+    section.top-words
+      .inner
+        //h2 Top Scoring Words
+        ol.word-list.most-wrong#MostWrongWords
+          li The Most Wrong Words So Far...
+        ol.word-list.least-wrong#LeastWrongWords
+          li The Least Wrong Words So Far...
     footer.javascripts
+      script(src="https://code.jquery.com/jquery-2.1.3.min.js")
       script(src="js/min/wrongest.min.js")

@@ -1,0 +1,27 @@
+.top-words { background-color:$black; color:$white; }
+.word-list { margin-top: 1em;
+  .statement { @extend %quote-wrap; }
+  .score { position: absolute; top:-1px; bottom:0; left:-1px; width:2.3em; text-align: center; padding-top: 0.3em; border-top:1px solid $black; color:$black; font-size:1.2em; }
+  li:first-child { font-size:1.5em; text-transform: uppercase; text-align: center; }
+  li:nth-child(n+2) { border:1px solid;  border-top:none; padding-top:0.5em; padding-bottom: 0.5em; position: relative; padding-left: 3.7em;
+    //&:before { counter-increment: section; content: counter(section)"."; width:2em; display: inline-block; text-align: center; font-weight: $bold; }
+  }
+  li:nth-child(2) { counter-reset: section; font-weight: $bold; margin-top: 1em; border-top:1px solid;
+    .statement { font-size:1.3em;  }
+    .score { border-top:none; padding-top: 0.5em; }
+  }
+  
+  &.most-wrong {
+    li:nth-child(n+2) { border-color: $red; }
+    .score { background-color:$red; }
+  }
+  
+  &.least-wrong {
+    li:nth-child(n+2) { border-color: $green; }
+    .score { background-color:$green; }
+  }
+}
+
+@media (max-width:$inner) {
+  .top-words { font-size:13px; }
+}
