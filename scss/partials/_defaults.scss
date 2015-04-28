@@ -16,6 +16,6 @@ p { padding-bottom: 1em;
 
 .button { display: inline-block; padding: 0.25em 0.75em; text-decoration:none; font-family:$font; background-color:$blue; color:$white; border:1px solid black; cursor:pointer; text-transform:uppercase;
   &.big { border-width: 2px; font-size:1.3em; }  
-  &:hover { background-color:lighten($blue,10%); transform: scale(1.2); }
+  &:hover { background-color:lighten($blue,10%); transform: scale(1.1); }
   &:active { box-shadow: 2px 2px 0 $black inset; }
 }
