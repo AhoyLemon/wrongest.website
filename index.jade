@@ -54,6 +54,8 @@ html(lang="en" itemscope itemtype="https://schema.org/VideoGame")
     // Schema.org meta tags
     meta(itemprop="name" content="The Wrongest Words")
     meta(itemprop="image" content="http://thefpl.us/img/og-image.png")
+    meta(itemprop="description" content="#{gameDescription}")
+    meta(itemprop="sameAs" content="http://www.wrongest.net")
     meta(itemprop="version" content="#{version}")
     meta(itemprop="playMode" content="MultiPlayer")
     meta(itemprop="gamePlatform" content="web browser")
@@ -68,10 +70,10 @@ html(lang="en" itemscope itemtype="https://schema.org/VideoGame")
       img.big-logo(src="svg/logo2.svg" itemprop="image")  
       .inner
         p= gameDescription
-        p(itemscope itemtype="https://schema.org/numberOfPlayers") It is playable on any device with a modern browser, and supports 
-          span(itemprop="minValue") 3
+        p It is playable on any device with a modern browser, and supports 
+          span.minPlayers 3
           | -
-          span(itemprop="maxValue") 8 
+          span.maxPlayers 8 
           |  players.
         .button-holder
           a.big.button(href="http://www.wrongest.net" itemprop="url") Play now
