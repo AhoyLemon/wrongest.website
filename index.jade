@@ -1,4 +1,6 @@
 - var version = "0.2.0"
+- var gameDescription = "A party game where you and your friends must struggle to defend some very stupid ideas."
+- var gameName = "The Wrongest Words"
 doctype html
 html(lang="en" itemscope itemtype="https://schema.org/VideoGame")
   head 
@@ -33,20 +35,20 @@ html(lang="en" itemscope itemtype="https://schema.org/VideoGame")
     link(rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fwrongest.net%2F&amp;user_id=thefplus&amp;title=The%20Wrongest%20Words" type="text/html")
     
     // Flattr
-    meta(name="twitter:card" content="summary")
-    meta(name="twitter:site" content="@WrongestWords")
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:site" content="#{gameName}")
     meta(name="twitter:creator" content="@AhoyLemon")
     meta(name="twitter:title" content="The Wrongest Words")
-    meta(name="twitter:description" content="A game where you and your friends must struggle to defend some very stupid ideas.")
+    meta(name="twitter:description" content="#{gameDescription}")
     meta(name="twitter:image" content="/img/twitter-card.png")
     meta(name="twitter:url" content="http://www.wrongest.website")
     
     //Facebook
-    meta(property="og:title" content="The Wrongest Words")
+    meta(property="og:title" content="#{gameName}")
     meta(property="og:type" content="game")
     meta(property="og:url" content="http://www.wrongest.website")
     meta(name="og:image" content="/img/og-image.png")
-    meta(property="og:description" content="A game where you and your friends must struggle to defend some very stupid ideas.")
+    meta(property="og:description" content="#{gameDescription}")
     meta(property="og:email" content="lemon@thefpl.us")
     
     // Schema.org meta tags
@@ -65,12 +67,12 @@ html(lang="en" itemscope itemtype="https://schema.org/VideoGame")
     section.logo.full-screen
       img.big-logo(src="svg/logo2.svg" itemprop="image")  
       .inner
-        p(itemscope itemtype="https://schema.org/numberOfPlayers") A party game where you and your friends struggle to defend the the stupid statements given to you. 
-        |  It is playable on any device with a modern browser, and supports 
-        span(itemprop="minValue") 3
-        | -
-        span(itemprop="maxValue") 8 
-        |  players.
+        p= gameDescription
+        p(itemscope itemtype="https://schema.org/numberOfPlayers") It is playable on any device with a modern browser, and supports 
+          span(itemprop="minValue") 3
+          | -
+          span(itemprop="maxValue") 8 
+          |  players.
         .button-holder
           a.big.button(href="http://www.wrongest.net" itemprop="url") Play now
           span ...or keep scrolling to find out how to play.
