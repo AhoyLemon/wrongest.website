@@ -1,6 +1,6 @@
 figure.social { text-align: center; padding-top: 10px; padding-bottom: 10px;
   > .inner { @extend %inner; }
-  a { display: inline-block; width: 23%; margin-right: 2%; max-height: 100px; max-width: 100px }
+  a { display: inline-block; width: 23%; max-height: 100px; max-width: 100px; margin-left: 3em; margin-right:3em; }
 }
 
 .social {
