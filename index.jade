@@ -32,9 +32,6 @@ html(lang="en" itemscope itemtype="https://schema.org/VideoGame")
     meta(name="theme-color", content="#7a6969")
     
     // Flattr
-    link(rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fwrongest.net%2F&amp;user_id=thefplus&amp;title=The%20Wrongest%20Words" type="text/html")
-    
-    // Flattr
     meta(name="twitter:card" content="summary_large_image")
     meta(name="twitter:site" content="#{gameName}")
     meta(name="twitter:creator" content="@AhoyLemon")
@@ -75,9 +72,20 @@ html(lang="en" itemscope itemtype="https://schema.org/VideoGame")
           | -
           span.maxPlayers 8 
           |  players.
-        .button-holder
-          a.big.button(href="http://www.wrongest.net" itemprop="url") Play now
-          span ...or keep scrolling to find out how to play.
+        //- 
+          .button-holder
+            a.big.button(href="http://www.wrongest.net" itemprop="url") Play now
+            span ...or keep scrolling to find out how to play.
+    section
+      .inner
+        h2 Important note
+        br
+        p This project was retired on 
+          b March 20th, 2017
+            |.
+        p Thank you for your interest, please visit 
+          a(href="http://ahoylemon.xyz") ahoylemon.xyz
+          |  for more.
     section.instructions#HowToPlay
       .inner
         h2 How to play
@@ -121,10 +129,11 @@ html(lang="en" itemscope itemtype="https://schema.org/VideoGame")
       figure.phones
         figcaption That's pretty much it.
         img(src="img/phones/gameover/galaxy-final2.png" itemprop="screenshot")
-      .inner
-        p Gameplay continues like this until we can declare a winner and the wrongest statement. You've got the idea by now, so how about you...
-        .button-holder
-          a.big.button(href="http://www.wrongest.net") play the wrongest words
+      //- 
+        .inner
+          p Gameplay continues like this until we can declare a winner and the wrongest statement. You've got the idea by now, so how about you...
+          .button-holder
+            a.big.button(href="http://www.wrongest.net") play the wrongest words
     section.contribute#Contribute
       .inner
         h2(style="margin-top:1em;") Contribute to the project
@@ -152,9 +161,10 @@ html(lang="en" itemscope itemtype="https://schema.org/VideoGame")
           |  to talk to people in the real world!
         h3#SuggestCard Suggest a card
         p Have your own idea for a card, or maybe lots of ideas for lots of cards? That's terrific, I think I have a suggest a card button around here somewhere. I'm trying to think of... Oh, wait, maybe it's under this paragraph?
-        .button-holder
-          a.big.button(href="http://goo.gl/forms/wXHLNXYVRJ") Suggest A Card
-          span ...yeah, there it is.
+        //- 
+          .button-holder
+            a.big.button(href="http://goo.gl/forms/wXHLNXYVRJ") Suggest A Card
+            span ...yeah, there it is.
     section.top-words#TopWords
       .inner
         ol.word-list.most-wrong#MostWrongWords
